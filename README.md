@@ -1,12 +1,12 @@
 # 🚀 124 Days of Algorithms (Python)
 
 > **Challenge:** Go from 0 to Big Tech Interview ready in 4 months.
-> **Goal:** Solve 600+ problems.
+> **Goal:** Solve 620 problems.
 
 ## 📊 Status
 ![Language](https://img.shields.io/badge/Language-Python3-blue)
 ![Mode](https://img.shields.io/badge/Mode-Hardwork-fire)
-![Progress](https://img.shields.io/badge/Solved-0%2F600-lightgrey)
+![Progress](https://img.shields.io/badge/Solved-5%2F620-lightgrey)
 
 ## 📅 Daily Log
 
