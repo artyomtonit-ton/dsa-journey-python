@@ -24,10 +24,9 @@ I solve ~5 problems every day.
 
 My solutions are organized by pattern/topic:
 
-- 📂 **[Arrays](./arrays)** — Basic list operations
-- 📂 **[Strings](./strings)** — Text processing
-- 📂 **[Matrix](./matrix)** — 2D Arrays (Grids)
-- 📂 **[Math](./math)** — Simple math logic
+- 📂 **[Arrays](./Arrays)** — Basic list operations
+- 📂 **[Strings](./Strings)** — Text processing
+
 
 ---
 *Repo maintained by [artyom]*
