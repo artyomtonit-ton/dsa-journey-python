@@ -6,7 +6,7 @@
 ## 📊 Status
 ![Language](https://img.shields.io/badge/Language-Python3-blue)
 ![Mode](https://img.shields.io/badge/Mode-Hardwork-fire)
-![Progress](https://img.shields.io/badge/Solved-15%2F620-lightgrey)
+![Progress](https://img.shields.io/badge/Solved-20%2F620-lightgrey)
 
 ## 📅 Daily Log
 
