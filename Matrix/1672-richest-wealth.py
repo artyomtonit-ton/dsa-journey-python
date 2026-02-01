@@ -16,7 +16,6 @@ A customer's wealth is the amount of money they have in all their bank accounts.
 Example:
 Input: accounts = [[1,2,3],[3,2,1]]
 Output: 6
-Explanation: Both customers have wealth = 6.
 """
 
 from typing import List
