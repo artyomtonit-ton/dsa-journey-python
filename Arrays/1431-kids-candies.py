@@ -15,7 +15,6 @@ Return a boolean array result where result[i] is true if, after giving the ith k
 Example:
 Input: candies = [2,3,5,1,3], extraCandies = 3
 Output: [true,true,true,false,true]
-Explanation: 
 """
 
 from typing import List
