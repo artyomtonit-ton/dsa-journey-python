@@ -14,17 +14,19 @@ Given a zero-based permutation nums (0-indexed), build an array ans of the same 
 Example:
 Input: nums = [0,2,1,5,3,4]
 Output: [0,1,2,4,5,3]
-Explanation: ans[0] = nums[nums[0]] = nums[0] = 0
 """
 
-nums = [0, 2, 1, 5, 3, 4]
+from typing import List
 
-def new_nums(nums):
-    ans = [0] * len(nums) 
+class Solution:
+    def buildArray(self, nums: List[int]) -> List[int]:
+        ans = [0] * len(nums) 
 
-    for i in range(len(nums)):
-        ans[i] = nums[nums[i]]
+        for i in range(len(nums)):
+            ans[i] = nums[nums[i]]
 
-    return ans
+        return ans
 
-print(new_nums(nums))
+if __name__ == "__main__":
+    sol = Solution()
+    print(sol.buildArray([0, 2, 1, 5, 3, 4]))

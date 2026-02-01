@@ -16,8 +16,6 @@ Example:
 Input: candies = [2,3,5,1,3], extraCandies = 3
 Output: [true,true,true,false,true]
 Explanation: 
-Kid 1 has 2 + 3 = 5 candies, which is >= max(2,3,5,1,3). Result is True.
-Kid 4 has 1 + 3 = 4 candies, which is < max(5). Result is False.
 """
 
 from typing import List

@@ -14,22 +14,22 @@ Return the array in the form [x1,y1,x2,y2,...,xn,yn].
 Example:
 Input: nums = [2,5,1,3,4,7], n = 3
 Output: [2,3,5,4,1,7]
-Explanation: [2,5,1] interleaved with [3,4,7].
 """
 
-n = 3
-nums = [2, 5, 1, 3, 4, 7]
+from typing import List
 
+class Solution:
+    def shuffle(self, nums: List[int], n: int) -> List[int]:
+        first_half = nums[:n]
+        second_half = nums[n:]
+        result = []
 
-def shuffle(n, nums):
-    list_X = nums[:n]
-    list_y = nums[n:]
-    x_y = []
+        for i in range(n):
+            result.append(first_half[i])
+            result.append(second_half[i])
 
-    for i in range(n):
-        x_y.append(list_X[i])
-        x_y.append(list_y[i])
+        return result
 
-    return x_y
-
-print(shuffle(n, nums))
+if __name__ == "__main__":
+    sol = Solution()
+    print(sol.shuffle([2, 5, 1, 3, 4, 7], 3))

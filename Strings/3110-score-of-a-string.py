@@ -14,16 +14,16 @@ Return the score of s.
 Example:
 Input: s = "hello"
 Output: 13
-Explanation: |h-e| + |e-l| + |l-l| + |l-o| = |104-101| + ... = 3 + 7 + 0 + 3 = 13.
 """
 
-s = "hello"
+class Solution:
+    def scoreOfString(self, s: str) -> int:
+        score = 0
+        for i in range(0, len(s) - 1):
+            score += abs(ord(s[i]) - ord(s[i+1]))
 
-def find_scorestr(s):
-    score = 0
-    for i in range(0, len(s)-1):
-        score += abs(ord(s[i]) - ord(s[i+1]))
+        return score
 
-    return score
-
-print(find_scorestr(s))
+if __name__ == "__main__":
+    sol = Solution()
+    print(sol.scoreOfString("hello"))

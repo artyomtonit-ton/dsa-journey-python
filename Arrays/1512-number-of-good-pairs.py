@@ -14,19 +14,21 @@ A pair (i, j) is called good if nums[i] == nums[j] and i < j.
 Example:
 Input: nums = [1,2,3,1,1,3]
 Output: 4
-Explanation: Pairs are (0,3), (0,4), (3,4), (2,5).
 """
 
-nums = [1, 2, 3, 1, 1, 3]
+from typing import List
 
-def find_goodpairs(nums):
-    count = 0
+class Solution:
+    def numIdenticalPairs(self, nums: List[int]) -> int:
+        count = 0
 
-    for i in range(len(nums)):
-        for j in range(i+1, len(nums)):
-            if nums[i] == nums[j] and i < j:
-                count += 1
-    
-    return count
+        for i in range(len(nums)):
+            for j in range(i + 1, len(nums)):
+                if nums[i] == nums[j] and i < j:
+                    count += 1
+        
+        return count
 
-print(find_goodpairs(nums))
+if __name__ == "__main__":
+    sol = Solution()
+    print(sol.numIdenticalPairs([1, 2, 3, 1, 1, 3]))

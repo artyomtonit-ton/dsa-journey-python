@@ -14,28 +14,20 @@ Given an integer number n, return the difference between the product of its digi
 Example:
 Input: n = 234
 Output: 15
-Explanation: 
-Product of digits = 2 * 3 * 4 = 24
-Sum of digits = 2 + 3 + 4 = 9
-Result = 24 - 9 = 15
 """
 
-
-from typing import List
-
 class Solution:
-    def subtractDigits(self, num: int) -> int:
-        addition = 0
-        multiplication = 1
+    def subtractProductAndSum(self, n: int) -> int:
+        digit_sum = 0
+        digit_prod = 1
 
-        for i in str(num):
-            addition += int(i)
-            multiplication *= int(i)
+        for char_digit in str(n):
+            digit = int(char_digit)
+            digit_sum += digit
+            digit_prod *= digit
 
-        return multiplication - addition
-
-
+        return digit_prod - digit_sum
 
 if __name__ == "__main__":
     s = Solution()
-    print(s.subtractDigits(234))
+    print(s.subtractProductAndSum(234))

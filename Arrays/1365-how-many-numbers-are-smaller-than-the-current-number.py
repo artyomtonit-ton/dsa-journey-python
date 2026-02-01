@@ -19,7 +19,7 @@ Output: [4,0,1,1,3]
 from typing import List
 
 class Solution:
-    def findSmallerNumber(self, nums: List[int]) -> List[int]:
+    def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
         smaller_nums = []
         
         for i in range(len(nums)):
@@ -33,4 +33,4 @@ class Solution:
 
 if __name__ == "__main__":
     s = Solution()
-    print(s.findSmallerNumber([8, 1, 2, 2, 3]))
+    print(s.smallerNumbersThanCurrent([8, 1, 2, 2, 3]))

@@ -19,19 +19,23 @@ Output: 6
 Explanation: Both customers have wealth = 6.
 """
 
-accounts = [
-    [1, 2, 3],
-    [3, 2, 1],
-    [3, 6, 1, 4]
-]
+from typing import List
 
-def find_max_wealth(accounts):
-    max_wealth = sum(accounts[0])
+class Solution:
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+        max_wealth = sum(accounts[0])
 
-    for i in accounts:
-        if sum(i) > max_wealth:
-            max_wealth = sum(i)
+        for customer_accounts in accounts:
+            if sum(customer_accounts) > max_wealth:
+                max_wealth = sum(customer_accounts)
 
-    return max_wealth
+        return max_wealth
 
-print(find_max_wealth(accounts))
+if __name__ == "__main__":
+    sol = Solution()
+    accounts = [
+        [1, 2, 3],
+        [3, 2, 1],
+        [3, 6, 1, 4]
+    ]
+    print(sol.maximumWealth(accounts))

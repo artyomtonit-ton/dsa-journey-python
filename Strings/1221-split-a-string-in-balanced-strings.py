@@ -16,7 +16,6 @@ Return the maximum number of balanced strings you can obtain.
 Example:
 Input: s = "RLRRLLRLRL"
 Output: 4
-Explanation: "RL", "RRLL", "RL", "RL".
 """
 
 class Solution:

@@ -19,20 +19,22 @@ Initially, the value of X is 0. Given an array of strings operations, return the
 Example:
 Input: operations = ["--X","X++","X++"]
 Output: 1
-Explanation: 0 - 1 + 1 + 1 = 1.
 """
 
-operations = ["--x", "x++", "++x"]
+from typing import List
 
-def find_x(prtns):
-    x = 0
+class Solution:
+    def finalValueAfterOperations(self, operations: List[str]) -> int:
+        x = 0
 
-    for i in prtns:
-        if "+" in i:
-            x += 1
-        else:
-            x -= 1
-    
-    return x
+        for op in operations:
+            if "+" in op:
+                x += 1
+            else:
+                x -= 1
+        
+        return x
 
-print(find_x(operations))
+if __name__ == "__main__":
+    sol = Solution()
+    print(sol.finalValueAfterOperations(["--x", "x++", "++x"]))

@@ -16,21 +16,17 @@ Letters are case sensitive, so "a" is considered a different type of stone from 
 Example:
 Input: jewels = "aA", stones = "aAAbbbb"
 Output: 3
-Explanation: "a", "A", "A" are jewels. Total 3.
 """
 
-from typing import List
-
 class Solution:
-    def findCountJewels(self, jewels: str, stones: str) -> int:
-        count_jewels = 0
-        for i in stones:
-            if i in jewels:
-                count_jewels += 1
+    def numJewelsInStones(self, jewels: str, stones: str) -> int:
+        count = 0
+        for stone in stones:
+            if stone in jewels:
+                count += 1
 
-        return count_jewels
-       
+        return count
 
 if __name__ == "__main__":
     s = Solution()
-    print(s.findCountJewels("aA", "aAAbbbb"))
+    print(s.numJewelsInStones("aA", "aAAbbbb"))

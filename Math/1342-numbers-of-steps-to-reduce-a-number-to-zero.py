@@ -16,29 +16,20 @@ In one step, if the current number is even, you have to divide it by 2, otherwis
 Example:
 Input: num = 14
 Output: 6
-Explanation: 
-Step 1) 14 is even; divide by 2 and obtain 7. 
-Step 2) 7 is odd; subtract 1 and obtain 6.
-...
-Step 6) 1 is odd; subtract 1 and obtain 0.
 """
 
-from typing import List
-
 class Solution:
-    def findSteps(self, num: int) -> int:
+    def numberOfSteps(self, num: int) -> int:
         steps = 0
         while num != 0:
             if num % 2 == 0:
-                num /= 2
-                steps += 1
+                num //= 2
             else:
                 num -= 1
-                steps += 1
+            steps += 1
         
         return steps
-       
 
 if __name__ == "__main__":
     s = Solution()
-    print(s.findSteps(14))
+    print(s.numberOfSteps(14))

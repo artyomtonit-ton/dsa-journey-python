@@ -16,21 +16,19 @@ Return the integer denoting the number of employees who met the target.
 Example:
 Input: hours = [0,1,2,3,4], target = 2
 Output: 3
-Explanation: Employees at indices 2, 3, and 4 worked at least 2 hours.
 """
 
 from typing import List
 
 class Solution:
-    def findMetTarget(self, hours: List[int], target: int) -> int:
-        count_meet_target = 0
-        for i in hours:
-            if i >= target:
-                count_meet_target += 1
+    def numberOfEmployeesWhoMetTarget(self, hours: List[int], target: int) -> int:
+        count = 0
+        for h in hours:
+            if h >= target:
+                count += 1
 
-        return count_meet_target
-       
+        return count
 
 if __name__ == "__main__":
     s = Solution()
-    print(s.findMetTarget([0, 1, 2, 3, 4], 2))
+    print(s.numberOfEmployeesWhoMetTarget([0, 1, 2, 3, 4], 2))

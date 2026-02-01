@@ -16,11 +16,13 @@ Input: nums = [1,2,1]
 Output: [1,2,1,1,2,1]
 """
 
-nums = [1, 2, 1]
+from typing import List
 
-def double_nums(nums):
-    ans = nums * 2 
+class Solution:
+    def getConcatenation(self, nums: List[int]) -> List[int]:
+        ans = nums * 2 
+        return ans
 
-    return ans
-
-print(double_nums(nums))
+if __name__ == "__main__":
+    sol = Solution()
+    print(sol.getConcatenation([1, 2, 1]))

@@ -14,19 +14,20 @@ Return an array of indices representing the words that contain the character x.
 Example:
 Input: words = ["leet","code"], x = "e"
 Output: [0,1]
-Explanation: "e" occurs in both "leet" and "code".
 """
 
-words = ["leet", "code", "cat", "home"]
-x = "e"
+from typing import List
 
-def find_indexes(words, e):
-    list_indexes = []
+class Solution:
+    def findWordsContaining(self, words: List[str], x: str) -> List[int]:
+        indices = []
 
-    for i in range(len(words)):
-        if x in words[i]:
-            list_indexes.append(i)
+        for i in range(len(words)):
+            if x in words[i]:
+                indices.append(i)
 
-    return list_indexes
+        return indices
 
-print(find_indexes(words, x))
+if __name__ == "__main__":
+    sol = Solution()
+    print(sol.findWordsContaining(["leet", "code", "cat", "home"], "e"))

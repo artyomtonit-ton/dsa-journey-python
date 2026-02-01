@@ -16,16 +16,17 @@ Input: address = "1.1.1.1"
 Output: "1[.]1[.]1[.]1"
 """
 
-address = "1.1.1.1"
+class Solution:
+    def defangIPaddr(self, address: str) -> str:
+        new_ip = ""
+        for i in range(len(address)):
+            if address[i] == ".":
+                new_ip += "[.]"
+            else:
+                new_ip += address[i]
+        
+        return new_ip
 
-def replace_address(address): 
-    new_ip = ""
-    for i in range(len(address)):
-        if address[i] == ".":
-            new_ip += "[.]"
-        else:
-            new_ip += address[i]
-    
-    return new_ip
-
-print(replace_address(address))
+if __name__ == "__main__":
+    sol = Solution()
+    print(sol.defangIPaddr("1.1.1.1"))

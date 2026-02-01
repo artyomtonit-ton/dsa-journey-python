@@ -14,22 +14,19 @@ Given a string n that represents a positive decimal integer, return the minimum 
 Example:
 Input: n = "32"
 Output: 3
-Explanation: 10 + 11 + 11 = 32.
 """
 
-from typing import List
-
 class Solution:
-    def finddecibinary(self, n: str) -> int:
-        max_n = 0
+    def minPartitions(self, n: str) -> int:
+        max_digit = 0
         
-        for i in n:
-            if int(i) > max_n:
-                max_n = int(i)
+        for char in n:
+            digit = int(char)
+            if digit > max_digit:
+                max_digit = digit
                 
-        return max_n
-       
+        return max_digit
 
 if __name__ == "__main__":
     s = Solution()
-    print(s.finddecibinary("32"))
+    print(s.minPartitions("32"))
