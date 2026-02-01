@@ -10,14 +10,13 @@ Each substring is balanced.
 Return the maximum number of balanced strings you can obtain.
 
 Описание:
-Сбалансированная строка содержит равное количество символов 'L' и 'R'.
-Дана строка s. Нужно разбить её на максимальное количество подстрок, каждая из которых тоже сбалансирована.
-Верни это количество.
+Дана сбалансированная строка s (поровну 'L' и 'R').
+Нужно разрезать её на максимальное количество кусков, чтобы каждый кусок тоже был сбалансированным.
 
 Example:
 Input: s = "RLRRLLRLRL"
 Output: 4
-Explanation: s can be split into "RL", "RRLL", "RL", "RL", each substring contains same number of 'L' and 'R'.
+Explanation: "RL", "RRLL", "RL", "RL".
 """
 
 class Solution:

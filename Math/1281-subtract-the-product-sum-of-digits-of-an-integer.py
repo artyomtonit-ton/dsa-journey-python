@@ -20,6 +20,7 @@ Sum of digits = 2 + 3 + 4 = 9
 Result = 24 - 9 = 15
 """
 
+
 from typing import List
 
 class Solution:
