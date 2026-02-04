@@ -31,7 +31,7 @@ My solutions are organized by pattern/topic:
 - 📂 **[Strings](./Strings)** — Text processing
 - 📂 **[Matrix](./Matrix)** — Working with matrices
 - 📂 **[Math](./Math)** — Working with math problems
-- 📂 **[HashTable](./Hash Table)** — Working with hash maps problems
+- 📂 **[HashTable](./HashTable)** — Working with hash maps problems
 
 
 ---
