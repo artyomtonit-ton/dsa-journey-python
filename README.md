@@ -20,6 +20,7 @@ I solve ~5 problems every day.
 | **4** | 31.01.2026 | Arrays & Math & Strings | `1431` `771` `1689` `1365` `1221` |
 | **5** | 02.02.2026 | Arrays & Matrix & Strings | `1720` `832` `1572` `9` `1528` `1` `136` `169` `217` `242` |
 | **6** | 04.02.2026 | Arrays & Hash Table | `349` `219` `387` `1207` `1832` |
+| **7** | 09.02.2026 | Two Pointers | `88` `125` `283` `344` `977` |
 | ... | ... | ... | ... |
 
 
@@ -31,7 +32,8 @@ My solutions are organized by pattern/topic:
 - 📂 **[Strings](./Strings)** — Text processing
 - 📂 **[Matrix](./Matrix)** — Working with matrices
 - 📂 **[Math](./Math)** — Working with math problems
-- 📂 **[HashTable](./HashTable)** — Working with hash maps problems
+- 📂 **[HashTable](./HashTable)** — Working with hash maps
+- 📂 **[TwoPointers](./TwoPointers)** — Working with two pointers problems
 
 
 ---
