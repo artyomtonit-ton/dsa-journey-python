@@ -6,7 +6,7 @@
 ## 📊 Status
 ![Language](https://img.shields.io/badge/Language-Python3-blue)
 ![Mode](https://img.shields.io/badge/Mode-Hardwork-fire)
-![Progress](https://img.shields.io/badge/Solved-40%2F620-lightgrey)
+![Progress](https://img.shields.io/badge/Solved-46%2F620-lightgrey)
 
 ## 📅 Daily Log
 
@@ -21,6 +21,7 @@ I solve ~5 problems every day.
 | **5** | 02.02.2026 | Arrays & Matrix & Strings | `1720` `832` `1572` `9` `1528` `1` `136` `169` `217` `242` |
 | **6** | 04.02.2026 | Arrays & Hash Table | `349` `219` `387` `1207` `1832` |
 | **7** | 09.02.2026 | Two Pointers | `88` `125` `283` `344` `977` |
+| **8** | 12.02.2026 | Arrays & Logic & Math & Two Pointers & Strings | `66` `121` `268` `14` `26` `1768` |
 | ... | ... | ... | ... |
 
 
@@ -34,6 +35,7 @@ My solutions are organized by pattern/topic:
 - 📂 **[Math](./Math)** — Working with math problems
 - 📂 **[HashTable](./HashTable)** — Working with hash maps
 - 📂 **[TwoPointers](./TwoPointers)** — Working with two pointers problems
+- 📂 **[Logic](./Logic)** — Working with for logical problems
 
 
 ---
