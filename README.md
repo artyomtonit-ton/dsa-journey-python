@@ -22,6 +22,7 @@ I solve ~5 problems every day.
 | **6** | 04.02.2026 | Arrays & Hash Table | `349` `219` `387` `1207` `1832` |
 | **7** | 09.02.2026 | Two Pointers | `88` `125` `283` `344` `977` |
 | **8** | 12.02.2026 | Arrays & Logic & Math & Two Pointers & Strings | `66` `121` `268` `14` `26` `1768` |
+| **9** | 14.02.2026 | TwoPointers & SlidingWindow | `643` `1984` `345` |
 | ... | ... | ... | ... |
 
 
@@ -36,6 +37,8 @@ My solutions are organized by pattern/topic:
 - 📂 **[HashTable](./HashTable)** — Working with hash maps
 - 📂 **[TwoPointers](./TwoPointers)** — Working with two pointers problems
 - 📂 **[Logic](./Logic)** — Working with for logical problems
+- 📂 **[SlidingWindow](./SlidingWindow)** — Working with for liding window problems
+
 
 
 ---
